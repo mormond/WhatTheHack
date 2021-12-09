@@ -1,6 +1,6 @@
 # Static Web Apps
 ## Introduction
-Web apps have evolved from the days of server-generated HTML to a new world of single page applications (SPAs) backed by APIs. Azure Static web apps offer a convenient way to create SPAs combined with a great developer experience. In this hack we'll explore the core capabilities of static web apps.  
+Web apps have evolved from the days of server-generated HTML to a new world of single page applications (SPAs) backed by APIs. Azure Static Web Apps offer a convenient way to create SPAs combined with a great developer experience. In this hack we'll explore the core capabilities of Azure Static Web Apps.  
 
 ## Learning Objectives
 In this hack you will be learning about key features of Azure Static Web Apps, designed to accelerate your app development with a global platform for hosting static content and APIs that supports native integration with CI/CD workflows to build and deploy.
