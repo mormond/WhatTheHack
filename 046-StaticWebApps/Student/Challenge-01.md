@@ -2,8 +2,7 @@
 [< Previous Challenge](./Challenge-00.md) - **[Home](../readme.md)** - [Next Challenge>](./Challenge-02.md)
 
 ## Pre-requisites
-Make sure you have completed the [pre-requisites in Challenge 0](./Challenge-00.md)
-
+Make sure you have completed the [pre-requisites in Challenge 0](./Challenge-00.md).
 
 ## Introduction
 A single page application (SPA) is web application that dynamically updates the page rather than refreshing the page with a round trip to the server. Static content combined with client JavaScript to call server APIs forms the basis of a SPA. Often you'll also find frameworks such as [Angular](https://angular.io/), [React](https://reactjs.org/) or [Vue.js](https://vuejs.org/). 
