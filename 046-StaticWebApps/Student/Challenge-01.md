@@ -9,9 +9,9 @@ A single page application (SPA) is web application that dynamically updates the 
 
 In this challenge we will create a very simple SPA using Azure Static Web Apps to provide the storage for the static content, serverless functions for APIs and a DevOps wrapper to provide source control and CI/CD.
 
-The architecture of an Azure Static Web App is shown below.
+The architecture of Azure Static Web Apps is shown below.
 
-![Diagram of Azure Static Web App architecture](./Images/static-web-apps.png)
+![Diagram of Azure Static Web Apps architecture](./Images/static-web-apps.png)
 
 ## Description
 Deploy a basic single page application using Azure Static Web Apps.
@@ -22,7 +22,7 @@ Deploy a basic single page application using Azure Static Web Apps.
 3. Verify a GitHub action has been created to deploy the web app
 
 ## Learning Resources
-* [What is Azure Static Web Apps?](https://docs.microsoft.com/en-gb/azure/static-web-apps/overview)
+* [What is Azure Static Web Apps?](https://docs.microsoft.com/azure/static-web-apps/overview)
 * [Creating an Azure Static Web App](https://docs.microsoft.com/azure/static-web-apps/get-started-portal)
 
 ## Tips
