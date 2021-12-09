@@ -1,73 +1,33 @@
-# Challenge 4 - Auth
+# Challenge 4 - Authentication
 
 [< Previous Challenge](./Challenge-03.md) - **[Home](../readme.md)** - [Next Challenge>](./Challenge-05.md)
 
-## Pre-requisites (Optional)
+## Pre-requisites
+Make sure you have completed [Challenge 3](./Challenge-03.md) and have a web app that calls an API and displays the results.
 
-*Include any technical pre-requisites needed for this challenge.  Typically, it is completion of one or more of the previous challenges if there is a dependency.*
+## Introduction
+Authentication (who are you) and authorization (what are you allowed to do) are critical aspects of Identity and Access Management (IAM) which help to secure access to your application and ensure users can access they data they should have access to while preventing them accessing data they shouldn't (intentionally or otherwise).
 
-**- Lorem ipsum dolor sit amet, consectetur adipiscing elit.**
-
-**- Fusce commodo nulla elit, vitae scelerisque lorem maximus eu.** 
-
-**- Nulla vitae ante turpis. Etiam tincidunt venenatis mauris, ac volutpat augue rutrum sed. Vivamus dignissim est sed dolor luctus aliquet. Vestibulum cursus turpis nec finibus commodo.**
-
-**- Vivamus venenatis accumsan neque non lacinia. Sed maximus sodales varius. Proin eu nulla nunc. Proin scelerisque ipsum in massa tincidunt venenatis. Nulla eget interdum nunc, in vehicula risus.**
-
-
-## Introduction (Optional)
-
-*Provide an overview of the technologies or tasks that will be needed to complete the next challenge.  This includes the technical context for the challenge, as well as any new "lessons" the attendees should learn before completing the challenge.*
-
-*Optionally, the coach or event host may present a mini-lesson (with a PPT or video) to set up the context & introduction to the next topic.*
-
-**Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce commodo nulla elit, vitae scelerisque lorem maximus eu. Nulla vitae ante turpis. Etiam tincidunt venenatis mauris, ac volutpat augue rutrum sed. Vivamus dignissim est sed dolor luctus aliquet. Vestibulum cursus turpis nec finibus commodo. Vivamus venenatis accumsan neque non lacinia.**
-
+Azure Static Web Apps provides a streamlined authentication experience making it very easy to integrate with a range of identity providers. Out of the box Azure Static Web Apps comes pre-configured with support for [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis), GitHub and Twitter. You can also [register your own custom provider](https://docs.microsoft.com/azure/static-web-apps/authentication-custom).
 
 ## Description
-
-*The challenge description and details go here.  This should NOT be step-by-step but rather a simple stating of the technical goals of the challenge.  If this is more than 2-3 paragraphs, it's likely you are not doing it right.*
-
-*Optionally, you may provide learning resources and/or tips and code snippets in the sections below. These are meant  as learning aids for the attendees to help them complete the challenge and maintain momentum as they may fall behind the rest of their squad cohorts.*
-
-**Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce commodo nulla elit, vitae scelerisque lorem maximus eu. Nulla vitae ante turpis. Etiam tincidunt venenatis mauris, ac volutpat augue rutrum sed. Vivamus dignissim est sed dolor luctus aliquet. Vestibulum cursus turpis nec finibus commodo. Vivamus venenatis accumsan neque non lacinia. Sed maximus sodales varius. Proin eu nulla nunc. Proin scelerisque ipsum in massa tincidunt venenatis. Nulla eget interdum nunc, in vehicula risus. Etiam rutrum purus non eleifend lacinia. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis vestibulum risus. Maecenas eu eros sit amet ligula consectetur pellentesque vel quis nisi.**
-
+Create a new page in your app called `secure.html`. Restrict access to that page to authenticated users only. On `secure.html` display some information (claims) about the current user. You will need to provide a facility for login / logout. Make sure that users can login with a friendly URL such as `/mysite/login`.
 
 ## Success Criteria
-
-*Success criteria goes here. This is a list of things an coach can verfiy to prove the attendee has successfully completed the challenge.*
-
-**- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce commodo nulla elit, vitae scelerisque lorem maximus eu. Nulla vitae ante turpis. Etiam tincidunt venenatis mauris, ac volutpat augue rutrum sed. Vivamus dignissim est sed dolor luctus aliquet. Vestibulum cursus turpis nec finibus commodo.**
-
-**- Vivamus venenatis accumsan neque non lacinia. Sed maximus sodales varius. Proin eu nulla nunc. Proin scelerisque ipsum in massa tincidunt venenatis. Nulla eget interdum nunc, in vehicula risus. Etiam rutrum purus non eleifend lacinia.**
-
-**- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis vestibulum risus. Maecenas eu eros sit amet ligula consectetur pellentesque vel quis nisi.**
-
+1. Users can login / logout by following links from `index.html`
+1. A user should also be able to login (logout) by browsing to `.../mysite/login` (`.../mysite/logout`) 
+1. A user who is not logged should not be able to access `secure.html` 
+1. An unauthenticated user who browses to `secure.html` should be redirected to a login page
+1. `secure.html` should display a claim such as the users's email address or username
 
 ## Learning Resources
+* [Azure Static Web Apps - Authentication and Authorization](https://docs.microsoft.com/azure/static-web-apps/authentication-authorization)
+* [Azure Static Web Apps - Configuration](https://docs.microsoft.com/azure/static-web-apps/configuration)
+* [Azure Static Web Apps - Configure Routes](https://docs.microsoft.com/azure/static-web-apps/configuration#routes)
+* [Azure Static Web Apps - Securing Routes with Roles](https://docs.microsoft.com/azure/static-web-apps/configuration#securing-routes-with-roles)
+* [Azure Static Web Apps - User Information](https://docs.microsoft.com/azure/static-web-apps/user-information?tabs=javascript)
 
-*List of relevant links and online articles that should give the attendees the knowledge needed to complete the challenge.*
-
-**- Lorem ipsum dolor sit amet, consectetur adipiscing elit.**
-
-**- Fusce commodo nulla elit, vitae scelerisque lorem maximus eu.** 
-
-**- Nulla vitae ante turpis. Etiam tincidunt venenatis mauris, ac volutpat augue rutrum sed. Vivamus dignissim est sed dolor luctus aliquet. Vestibulum cursus turpis nec finibus commodo.**
-
-
-## Tips (Optional)
-
-*Add tips and hints here to give students food for thought.*
-
-**- Lorem ipsum dolor sit amet, consectetur adipiscing elit.**
-
-**- Fusce commodo nulla elit, vitae scelerisque lorem maximus eu.** 
-
-
-## Advanced Challenges (Optional)
-
-*Too comfortable?  Eager to do more?  Try these additional challenges!*
-
-**- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce commodo nulla elit, vitae scelerisque lorem maximus eu. Nulla vitae ante turpis. Etiam tincidunt venenatis mauris, ac volutpat augue rutrum sed. Vivamus dignissim est sed dolor luctus aliquet. Vestibulum cursus turpis nec finibus commodo. Vivamus venenatis accumsan neque non lacinia.**
-
-**- Sed maximus sodales varius. Proin eu nulla nunc. Proin scelerisque ipsum in massa tincidunt venenatis. Nulla eget interdum nunc, in vehicula risus. Etiam rutrum purus non eleifend lacinia. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis vestibulum risus. Maecenas eu eros sit amet ligula consectetur pellentesque vel quis nisi.**
+## Tips
+* You can copy `index.html` and rename to `secure.html` as a good starting point
+* Use one of the pre-configured identity providers
+* Make sure to redirect **unauthorised** users trying to access `secure.html` to a login page
