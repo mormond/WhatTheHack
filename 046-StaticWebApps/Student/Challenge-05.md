@@ -2,72 +2,35 @@
 
 [< Previous Challenge](./Challenge-04.md) - **[Home](../readme.md)** - [Next Challenge>](./Challenge-06.md)
 
-## Pre-requisites (Optional)
+## Pre-requisites
 
-*Include any technical pre-requisites needed for this challenge.  Typically, it is completion of one or more of the previous challenges if there is a dependency.*
+Make sure you have completed [Challenge 1](./Challenge-01.md) and successfully deployed a web app.
 
-**- Lorem ipsum dolor sit amet, consectetur adipiscing elit.**
+- A purchased domain name
+- Access to the DNS configuration properties for your domain
 
-**- Fusce commodo nulla elit, vitae scelerisque lorem maximus eu.** 
+If you do not meet these pre-requisites then skip this challenge and move to the next. Skipping will not prevent you from completing other challenges
 
-**- Nulla vitae ante turpis. Etiam tincidunt venenatis mauris, ac volutpat augue rutrum sed. Vivamus dignissim est sed dolor luctus aliquet. Vestibulum cursus turpis nec finibus commodo.**
+## Introduction
 
-**- Vivamus venenatis accumsan neque non lacinia. Sed maximus sodales varius. Proin eu nulla nunc. Proin scelerisque ipsum in massa tincidunt venenatis. Nulla eget interdum nunc, in vehicula risus.**
+A custom domain name allows your users to find your application more easily because of higher search engine rankings and consistent branding.
 
+In this challenge we are going to introduce a custom domain name to reach your application, for example **https://www.example.com** rather than **https://auto-generated.region.azurestaticapps.net**
 
-## Introduction (Optional)
-
-*Provide an overview of the technologies or tasks that will be needed to complete the next challenge.  This includes the technical context for the challenge, as well as any new "lessons" the attendees should learn before completing the challenge.*
-
-*Optionally, the coach or event host may present a mini-lesson (with a PPT or video) to set up the context & introduction to the next topic.*
-
-**Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce commodo nulla elit, vitae scelerisque lorem maximus eu. Nulla vitae ante turpis. Etiam tincidunt venenatis mauris, ac volutpat augue rutrum sed. Vivamus dignissim est sed dolor luctus aliquet. Vestibulum cursus turpis nec finibus commodo. Vivamus venenatis accumsan neque non lacinia.**
-
+Azure Static Web Apps supports using your own custom domain and provides a free SSL/TLS certificate for any added custom domains as well as for the original, auto-generated URL.
 
 ## Description
 
-*The challenge description and details go here.  This should NOT be step-by-step but rather a simple stating of the technical goals of the challenge.  If this is more than 2-3 paragraphs, it's likely you are not doing it right.*
-
-*Optionally, you may provide learning resources and/or tips and code snippets in the sections below. These are meant  as learning aids for the attendees to help them complete the challenge and maintain momentum as they may fall behind the rest of their squad cohorts.*
-
-**Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce commodo nulla elit, vitae scelerisque lorem maximus eu. Nulla vitae ante turpis. Etiam tincidunt venenatis mauris, ac volutpat augue rutrum sed. Vivamus dignissim est sed dolor luctus aliquet. Vestibulum cursus turpis nec finibus commodo. Vivamus venenatis accumsan neque non lacinia. Sed maximus sodales varius. Proin eu nulla nunc. Proin scelerisque ipsum in massa tincidunt venenatis. Nulla eget interdum nunc, in vehicula risus. Etiam rutrum purus non eleifend lacinia. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis vestibulum risus. Maecenas eu eros sit amet ligula consectetur pellentesque vel quis nisi.**
-
+Set up a custom domain name with certificate so that requests to your web application can be made securely.
 
 ## Success Criteria
 
-*Success criteria goes here. This is a list of things an coach can verfiy to prove the attendee has successfully completed the challenge.*
-
-**- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce commodo nulla elit, vitae scelerisque lorem maximus eu. Nulla vitae ante turpis. Etiam tincidunt venenatis mauris, ac volutpat augue rutrum sed. Vivamus dignissim est sed dolor luctus aliquet. Vestibulum cursus turpis nec finibus commodo.**
-
-**- Vivamus venenatis accumsan neque non lacinia. Sed maximus sodales varius. Proin eu nulla nunc. Proin scelerisque ipsum in massa tincidunt venenatis. Nulla eget interdum nunc, in vehicula risus. Etiam rutrum purus non eleifend lacinia.**
-
-**- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis vestibulum risus. Maecenas eu eros sit amet ligula consectetur pellentesque vel quis nisi.**
-
+- Visiting your custom domain in a web browser should navigate to your web application
+- Insecure requests (http) should be redirected to a secure endpoint (https)
+- A valid certificate should be present for your custom domain
 
 ## Learning Resources
 
-*List of relevant links and online articles that should give the attendees the knowledge needed to complete the challenge.*
-
-**- Lorem ipsum dolor sit amet, consectetur adipiscing elit.**
-
-**- Fusce commodo nulla elit, vitae scelerisque lorem maximus eu.** 
-
-**- Nulla vitae ante turpis. Etiam tincidunt venenatis mauris, ac volutpat augue rutrum sed. Vivamus dignissim est sed dolor luctus aliquet. Vestibulum cursus turpis nec finibus commodo.**
-
-
-## Tips (Optional)
-
-*Add tips and hints here to give students food for thought.*
-
-**- Lorem ipsum dolor sit amet, consectetur adipiscing elit.**
-
-**- Fusce commodo nulla elit, vitae scelerisque lorem maximus eu.** 
-
-
-## Advanced Challenges (Optional)
-
-*Too comfortable?  Eager to do more?  Try these additional challenges!*
-
-**- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce commodo nulla elit, vitae scelerisque lorem maximus eu. Nulla vitae ante turpis. Etiam tincidunt venenatis mauris, ac volutpat augue rutrum sed. Vivamus dignissim est sed dolor luctus aliquet. Vestibulum cursus turpis nec finibus commodo. Vivamus venenatis accumsan neque non lacinia.**
-
-**- Sed maximus sodales varius. Proin eu nulla nunc. Proin scelerisque ipsum in massa tincidunt venenatis. Nulla eget interdum nunc, in vehicula risus. Etiam rutrum purus non eleifend lacinia. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis vestibulum risus. Maecenas eu eros sit amet ligula consectetur pellentesque vel quis nisi.**
+* [DNS Configuration](https://docs.microsoft.com/azure/static-web-apps/custom-domain?tabs=azure-dns#dns-configuration-options)
+* [What is Azure DNS?](https://docs.microsoft.com/azure/dns/dns-overview)
+* [Azure Static Web Apps - Custom Domain](https://docs.microsoft.com/azure/static-web-apps/custom-domain)
