@@ -1,3 +1,15 @@
+<!-- {% comment %} -->
+# What The Hack - Repo
+
+Welcome to the What The Hack repo on GitHub. This repo contains Coach content designed for people planning to host a What The Hack event with students in an organization. 
+
+If you are an organization that is interested in attending or hosting a What The Hack event, please visit the [What The Hack website](https://aka.ms/wth) at: **https://aka.ms/wth**
+
+**If you are a student attending a What The Hack event, please go to the [What The Hack website](https://aka.ms/wth).**
+
+![What The Hack Website](/assets/images/wth-logo.png)
+<!-- {% endcomment %} -->
+
 # What is What The Hack?
 
 "What the Hack" is a set of challenge based hackathons that can be hosted in-person or virtually via Microsoft Teams.
@@ -14,13 +26,26 @@ Would you like to host a What The Hack for your organization? The WTH format and
 
 See our complete guide on ["How To Host A Hack"](/000-HowToHack/WTH-HowToHostAHack.md).
 
-# How to Create and Contribute a new What The Hack
+# How to Contribute to What The Hack
 
-Would you like to create a new What The Hack?  We welcome all new hacks!  We have developed a process for doing this.  This includes a set of guidelines and templates to help you package your hack up for the What The Hack repo!
+What The Hack is community driven. Here are our core principles:
+- Anyone can [contribute a new hack](./CONTRIBUTING.md).
+- Anyone can use the content to [host their own WTH event](./000-HowToHack/WTH-HowToHostAHack.md).
+- Anyone can modify or update a hack as needed.
+  - Contributing updates back via a [pull request](./CONTRIBUTING.md) is encouraged.
+- The content can always be shared with hack attendees **(Only do this after the event is over!)**
 
-Hacks can focus on a single technology or focus on a solution scenario that features multiple technologies working  together to solve a business problem.
+Would you like to contribute to What The Hack?  We welcome new hacks and updates to existing hacks!  We have developed a process for doing this.  
 
-See our complete guide on ["How To Author A Hack"](/000-HowToHack/WTH-HowToAuthorAHack.md).
+See our [What The Hack Contribution Guide](./CONTRIBUTING.md) to learn about the contribution and review process.
+
+# How to Author a What The Hack
+
+What makes a good hack? We have a guide that helps answer that question!
+
+Hacks can focus on a single technology or focus on a solution scenario that features multiple technologies working together to solve a business problem.
+
+Read our [What The Hack Author's Guide](/000-HowToHack/WTH-HowToAuthorAHack.md) for details on how to author a hack. The author's guide contains a set of markdown template files that help you quickly create new hack content that is consistent with the WTH format.
 
 # The What The Hack Collection
 
@@ -41,8 +66,9 @@ Here is the current list of What The Hack hackathons available in this repositor
 - [Azure Networking with Hub & Spoke](/035-HubAndSpoke/README.md)
 - [Using BGP Networking for Hybrid Connectivity](/036-BGP/README.md)
 - [Azure Virtual WAN](/041-VirtualWAN/README.md)
+- [Azure Route Server](/057-AzureRouteServer/README.md)
 - [Azure Governance](/022-AzureGovernance/README.md)
-- [Mastering Linux](/020-MasteringLinux/README.md)
+- [Linux Fundamentals](/020-LinuxFundamentals/README.md)
 - [Azure Virtual Desktop](/037-AzureVirtualDesktop/README.md)
 - [SAP On Azure](/042-SAPOnAzure/README.md)
 
@@ -54,19 +80,29 @@ Here is the current list of What The Hack hackathons available in this repositor
 - [Serverless](/015-Serverless/README.md)
 - [Migrating Applications To The Cloud](/016-AppMigration/README.md)
 - [IdentityForApps](/021-IdentityForApps/README.md)
-- [Mastering Linux](/020-MasteringLinux/README.md)
-- [FHIR Powered Healthcare](/027-FHIRPoweredHealthcare/readme.md)
+- [Linux Fundamentals](/020-LinuxFundamentals/README.md)
+- [FHIR Powered Healthcare](/027-FHIRPoweredHealthcare/README.md)
+- [Traffic Control with Dapr](/047-TrafficControlWithDapr/README.md)
+- [Azure Integration Services - API Management with Function Apps](/050-AIS-APIManagementwithFunctions/README.md)
+- [SAP on Azure: Application Modernization](/052-SAPAppModernization/README.md)
+- [Power Platform Basics](/058-PowerPlatformBasics/README.md)
 
 ## Operations
 - [Azure Monitoring](/007-AzureMonitoring/README.md)
+- [Datadog On Azure](/059-DatadogOnAzure/README.md)
 - [DevOps with GitHub](/031-DevOpsWithGitHub/readme.md)
-- [DevOps with GitHub Actions](/044-DevOpswithGitHubActions/README.md)
-- [Azure DevOps](/010-AzureDevOps/readme.md)
+- [DevOps with GitHub Actions](/044-DevOpswithGithubActions/README.md)
+- [Azure DevOps](/010-AzureDevOps/README.md)
 - [Open Source DevOps](/014-OSSDevOps/readme.md)
 - [MLOps from Scratch](/032-MLOpsFromScratch/README.md)
-- [Mastering Linux](/020-MasteringLinux/README.md)
+- [Linux Fundamentals](/020-LinuxFundamentals/README.md)
+- [Data Governance with Microsoft Purview](/051-MicrosoftPurview/README.md)
+- [Sentinel Automated Response](/053-SentinelAutomatedResponse/README.md)
+- [Azure Load Testing](/054-AzureLoadTesting/README.md)
 
 ## Data & AI
+- [Cosmic Troubleshooting](/056-CosmicTroubleshooting/README.md)
+- [Data Governance with Microsoft Purview](/051-MicrosoftPurview/README.md)
 - [SQL Modernization and Migration](/043-SQLModernization/README.md)
 - [OSS Database Migration](/033-OSSDatabaseMigration/README.md)
 - [MLOps from Scratch](/032-MLOpsFromScratch/README.md)
@@ -75,10 +111,12 @@ Here is the current list of What The Hack hackathons available in this repositor
 - [This Old Data Warehouse](/019-ThisOldDataWarehouse/README.md)
 - [Modern Data Warehouse - Covid 19](/038-MDWCovid19/README.md)
 - [Do You Even Synapse](/024-DoYouEvenSynapse/README.md)
+- [Incremental Synapse Pipelines](/048-IncrementalSynapsePipelines/README.md)
+- [Synapse Dedicated SQL Pool - Performance Best Practices](/049-SQLDedicatedPoolPerf/README.md)
 - [Conversational AI](/030-ConversationalAI/README.md)
 - [Databricks/Intro to ML](/008-DatabricksIntroML/README.md)
-- [Intro To Azure AI](/002-IntroToAzureAI/README.md)
-- [Driving Miss Data](/003-DrivingMissData/README.md)
+- [Intro To Azure AI](/002-IntroToAzureAI/README.md) - ARCHIVED
+- [Driving Miss Data](/003-DrivingMissData/README.md) - ARCHIVED
 
 ## Microsoft Teams Platform
 - [Microsoft Teams: Make It Real](/034-MicrosoftTeams-MakeItReal/README.md)
@@ -95,11 +133,21 @@ Here is the current list of What The Hack hackathons available in this repositor
 - [Using BGP Networking for Hybrid Connectivity](/036-BGP/README.md)
 - [Azure Virtual WAN](/041-VirtualWAN/README.md)
 - [Azure Front Door](/017-FrontDoor/README.md)
+- [Azure Route Server](/057-AzureRouteServer/README.md)
 
-# [License](https://github.com/Microsoft/WhatTheHack/blob/master/LICENSE)
+## SAP on Azure
+- [SAP on Azure](/042-SAPOnAzure/README.md)
+- [SAP on Azure: Application Modernization](/052-SAPAppModernization/README.md)
+
+## Power Platform
+- [Power Platform Basics](/058-PowerPlatformBasics/README.md)
+
+## Archived
+
+These hacks have been archived due to obsolesence or dependencies on sample code or data that is no longer available. If you are interested in updating these hacks, [contributions are welcome](CONTRIBUTING.md)! Please consider contributing to keep What The Hack up to date.
+
+- [Intro To Azure AI](/002-IntroToAzureAI/README.md)
+- [Driving Miss Data](/003-DrivingMissData/README.md)
+
+# License
 This repository is licensed under MIT license. More info can be found [here](https://github.com/Microsoft/WhatTheHack/blob/master/LICENSE).
-
-# [Contributing](https://github.com/Microsoft/WhatTheHack/blob/master/CONTRIBUTING.md)
-
-We welcome contributions and suggestions. More info can be found [here](https://github.com/Microsoft/WhatTheHack/blob/master/CONTRIBUTING.md).
-
